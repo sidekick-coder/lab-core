@@ -1,0 +1,461 @@
+{
+  "name": "@sidekick-coder/lab-core",
+  "version": "0.0.1",
+  "items": [
+    {
+      "name": "cacher",
+      "files": [
+        {
+          "name": "createCacheHash",
+          "path": "./src/cacher/createCacheHash.ts",
+          "optional": false
+        },
+        {
+          "name": "createCachePath",
+          "path": "./src/cacher/createCachePath.ts",
+          "optional": false
+        },
+        {
+          "name": "createCacher",
+          "path": "./src/cacher/createCacher.ts",
+          "optional": false
+        },
+        {
+          "name": "getCache",
+          "path": "./src/cacher/getCache.ts",
+          "optional": false
+        },
+        {
+          "name": "index",
+          "path": "./src/cacher/index.ts",
+          "optional": false
+        },
+        {
+          "name": "setCache",
+          "path": "./src/cacher/setCache.ts",
+          "optional": false
+        },
+        {
+          "name": "types",
+          "path": "./src/cacher/types.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "commander",
+      "files": [
+        {
+          "name": "createCommander.spec",
+          "path": "./src/commander/createCommander.spec.ts",
+          "optional": true
+        },
+        {
+          "name": "createCommander",
+          "path": "./src/commander/createCommander.ts",
+          "optional": false
+        },
+        {
+          "name": "createCommanderHelp",
+          "path": "./src/commander/createCommanderHelp.ts",
+          "optional": false
+        },
+        {
+          "name": "createHelpText",
+          "path": "./src/commander/createHelpText.ts",
+          "optional": false
+        },
+        {
+          "name": "createHelpTextFromCommander",
+          "path": "./src/commander/createHelpTextFromCommander.ts",
+          "optional": false
+        },
+        {
+          "name": "defineCommand",
+          "path": "./src/commander/defineCommand.ts",
+          "optional": false
+        },
+        {
+          "name": "options.spec-d",
+          "path": "./src/commander/options.spec-d.ts",
+          "optional": false
+        },
+        {
+          "name": "options.spec",
+          "path": "./src/commander/options.spec.ts",
+          "optional": true
+        },
+        {
+          "name": "options",
+          "path": "./src/commander/options.ts",
+          "optional": false
+        },
+        {
+          "name": "types",
+          "path": "./src/commander/types.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "date",
+      "files": [
+        {
+          "name": "date",
+          "path": "./src/date/date.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "di",
+      "files": [
+        {
+          "name": "index",
+          "path": "./src/di/index.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "docker",
+      "files": [
+        {
+          "name": "caddy.compose",
+          "path": "./src/docker/caddy.compose.yml",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "emitter",
+      "files": [
+        {
+          "name": "index",
+          "path": "./src/emitter/index.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "fetcher",
+      "files": [
+        {
+          "name": "createFetch",
+          "path": "./src/fetcher/createFetch.ts",
+          "optional": false
+        },
+        {
+          "name": "fetch",
+          "path": "./src/fetcher/fetch.ts",
+          "optional": false
+        },
+        {
+          "name": "index",
+          "path": "./src/fetcher/index.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "filesystem",
+      "files": [
+        {
+          "name": "createFilesystem",
+          "path": "./src/filesystem/createFilesystem.ts",
+          "optional": false
+        },
+        {
+          "name": "createFilesystemFake",
+          "path": "./src/filesystem/createFilesystemFake.ts",
+          "optional": false
+        },
+        {
+          "name": "createFsFake",
+          "path": "./src/filesystem/createFsFake.ts",
+          "optional": false
+        },
+        {
+          "name": "createFsNode",
+          "path": "./src/filesystem/createFsNode.ts",
+          "optional": false
+        },
+        {
+          "name": "createPathFake",
+          "path": "./src/filesystem/createPathFake.ts",
+          "optional": false
+        },
+        {
+          "name": "createPathNode",
+          "path": "./src/filesystem/createPathNode.ts",
+          "optional": false
+        },
+        {
+          "name": "read.spec-d",
+          "path": "./src/filesystem/read.spec-d.ts",
+          "optional": false
+        },
+        {
+          "name": "read.spec",
+          "path": "./src/filesystem/read.spec.ts",
+          "optional": true
+        },
+        {
+          "name": "read",
+          "path": "./src/filesystem/read.ts",
+          "optional": false
+        },
+        {
+          "name": "readSync.spec-d",
+          "path": "./src/filesystem/readSync.spec-d.ts",
+          "optional": false
+        },
+        {
+          "name": "readSync.spec",
+          "path": "./src/filesystem/readSync.spec.ts",
+          "optional": true
+        },
+        {
+          "name": "readSync",
+          "path": "./src/filesystem/readSync.ts",
+          "optional": false
+        },
+        {
+          "name": "types",
+          "path": "./src/filesystem/types.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "importAll",
+      "files": [
+        {
+          "name": "importAll",
+          "path": "./src/importAll/importAll.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "files": [
+        {
+          "name": "createConsoleTransport",
+          "path": "./src/logger/createConsoleTransport.ts",
+          "optional": false
+        },
+        {
+          "name": "createFileTransport",
+          "path": "./src/logger/createFileTransport.ts",
+          "optional": false
+        },
+        {
+          "name": "createLogger",
+          "path": "./src/logger/createLogger.ts",
+          "optional": false
+        },
+        {
+          "name": "index",
+          "path": "./src/logger/index.ts",
+          "optional": false
+        },
+        {
+          "name": "injections",
+          "path": "./src/logger/injections.ts",
+          "optional": false
+        },
+        {
+          "name": "printObject",
+          "path": "./src/logger/printObject.ts",
+          "optional": false
+        },
+        {
+          "name": "types",
+          "path": "./src/logger/types.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "print",
+      "files": [
+        {
+          "name": "print",
+          "path": "./src/print/print.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "rclone",
+      "files": [
+        {
+          "name": "createRCloneInstance",
+          "path": "./src/rclone/createRCloneInstance.ts",
+          "optional": false
+        },
+        {
+          "name": "index",
+          "path": "./src/rclone/index.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "scheduler",
+      "files": [
+        {
+          "name": "createScheduler",
+          "path": "./src/scheduler/createScheduler.ts",
+          "optional": false
+        },
+        {
+          "name": "createSchedulerCommander",
+          "path": "./src/scheduler/createSchedulerCommander.ts",
+          "optional": false
+        },
+        {
+          "name": "defineRoutine",
+          "path": "./src/scheduler/defineRoutine.ts",
+          "optional": false
+        },
+        {
+          "name": "index",
+          "path": "./src/scheduler/index.ts",
+          "optional": false
+        },
+        {
+          "name": "types",
+          "path": "./src/scheduler/types.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shell",
+      "files": [
+        {
+          "name": "shell",
+          "path": "./src/shell/shell.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "sleep",
+      "files": [
+        {
+          "name": "sleep",
+          "path": "./src/sleep/sleep.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "sources",
+      "files": [
+        {
+          "name": "index",
+          "path": "./src/sources/index.ts",
+          "optional": false
+        },
+        {
+          "name": "schema",
+          "path": "./src/sources/schema.ts",
+          "optional": false
+        },
+        {
+          "name": "transform",
+          "path": "./src/sources/transform.ts",
+          "optional": false
+        },
+        {
+          "name": "types",
+          "path": "./src/sources/types.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "try-catch",
+      "files": [
+        {
+          "name": "tryCatch",
+          "path": "./src/try-catch/tryCatch.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "validator",
+      "files": [
+        {
+          "name": "extras",
+          "path": "./src/validator/extras.ts",
+          "optional": false
+        },
+        {
+          "name": "index",
+          "path": "./src/validator/index.ts",
+          "optional": false
+        },
+        {
+          "name": "types",
+          "path": "./src/validator/types.ts",
+          "optional": false
+        },
+        {
+          "name": "valibot",
+          "path": "./src/validator/valibot.ts",
+          "optional": false
+        },
+        {
+          "name": "validate",
+          "path": "./src/validator/validate.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "windows-dialog",
+      "files": [
+        {
+          "name": "index",
+          "path": "./src/windows-dialog/index.ts",
+          "optional": false
+        },
+        {
+          "name": "scripts",
+          "path": "./src/windows-dialog/scripts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "windows-service",
+      "files": [
+        {
+          "name": "createCommanderPlugin",
+          "path": "./src/windows-service/createCommanderPlugin.ts",
+          "optional": false
+        },
+        {
+          "name": "createService",
+          "path": "./src/windows-service/createService.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "yaml",
+      "files": [
+        {
+          "name": "yaml",
+          "path": "./src/yaml/yaml.ts",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}
