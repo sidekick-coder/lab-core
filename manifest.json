@@ -43,6 +43,26 @@
       ]
     },
     {
+      "name": "cli-ui",
+      "files": [
+        {
+          "name": "array",
+          "path": "./src/cli-ui/array.ts",
+          "optional": false
+        },
+        {
+          "name": "object",
+          "path": "./src/cli-ui/object.ts",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "path": "./src/cli-ui/ui.ts",
+          "optional": false
+        }
+      ]
+    },
+    {
       "name": "commander",
       "files": [
         {
@@ -78,7 +98,7 @@
         {
           "name": "options.spec-d",
           "path": "./src/commander/options.spec-d.ts",
-          "optional": false
+          "optional": true
         },
         {
           "name": "options.spec",
@@ -131,8 +151,8 @@
       "name": "emitter",
       "files": [
         {
-          "name": "index",
-          "path": "./src/emitter/index.ts",
+          "name": "createEmitter",
+          "path": "./src/emitter/createEmitter.ts",
           "optional": false
         }
       ]
@@ -193,7 +213,7 @@
         {
           "name": "read.spec-d",
           "path": "./src/filesystem/read.spec-d.ts",
-          "optional": false
+          "optional": true
         },
         {
           "name": "read.spec",
@@ -208,7 +228,7 @@
         {
           "name": "readSync.spec-d",
           "path": "./src/filesystem/readSync.spec-d.ts",
-          "optional": false
+          "optional": true
         },
         {
           "name": "readSync.spec",

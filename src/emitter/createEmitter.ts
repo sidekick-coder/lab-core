@@ -1,9 +1,10 @@
-interface Observer {
+export interface EmitterObserver {
     name: string
     callback: Function
 }
+
 export function createEmitter() {
-    const observers = [] as Observer[]
+    const observers = [] as EmitterObserver[]
 
     function on(name: string, callback: Function) {
         observers.push({ name, callback })

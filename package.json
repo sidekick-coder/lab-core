@@ -19,6 +19,7 @@
     "@inquirer/prompts": "^7.2.4",
     "@sidekick-coder/db": "file:../db",
     "chalk": "^5.4.1",
+    "cli-table3": "^0.6.5",
     "cliui": "^8.0.1",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
