@@ -1,11 +1,16 @@
 import Table from 'cli-table3'
-import { object } from './object.js'
 
-export function array(output: any, columns?: any[]) {
+interface TableHead<T = any> {
+    label: string
+    value: string | ((item: T) => string)
+    width?: number
+    realWidth?: number
+}
+
+export function array<T = any>(data: T[], columns?: TableHead<T>[]) {
     const screenWidth = (process.stdout.columns || 80) - 6
     const rows = [] as string[][]
-    const head: { label: string; value: string; width?: number; realWidth?: number }[] = []
-    const data = output.data as Record<string, any>[]
+    const head: TableHead<T>[] = []
 
     if (columns) {
         head.push(...columns)
@@ -23,11 +28,28 @@ export function array(output: any, columns?: any[]) {
             })
     }
 
-    output.data.forEach((item: any) => {
+    data.forEach((item: any) => {
         const row = [] as string[]
 
         head.forEach((h) => {
-            row.push(item[h.value])
+            let value = ''
+
+            if (typeof h.value === 'function') {
+                value = h.value(item)
+            }
+
+            if (typeof h.value === 'string') {
+                value = item[h.value]
+            }
+
+            if (value === undefined || value === null) {
+                value = ''
+            }
+            if (typeof value === 'object') {
+                value = JSON.stringify(value)
+            }
+
+            row.push(value)
         })
 
         rows.push(row)
@@ -71,8 +93,6 @@ export function array(output: any, columns?: any[]) {
     })
 
     table.push(...rows)
-
-    object(output.meta)
 
     console.log(table.toString())
 }
