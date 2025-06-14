@@ -10,7 +10,7 @@ export function object(output: any = {}) {
     })
 
     for (const key of Object.keys(output)) {
-        table.push([key, output[key]])
+        table.push([key, String(output[key])])
     }
 
     console.log(table.toString())
