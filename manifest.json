@@ -81,6 +81,11 @@
           "optional": false
         },
         {
+          "name": "createCommandHelp",
+          "path": "./src/commander/createCommandHelp.ts",
+          "optional": false
+        },
+        {
           "name": "createHelpText",
           "path": "./src/commander/createHelpText.ts",
           "optional": false
